@@ -82,7 +82,7 @@ const data2 = JSON.parse('<?=$json?>');
     <script src="js/main.js"></script>
     <script src="js/map.js"></script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNEi2b1GOgzSaXbcDwS6lOUEj_s-iA9i4&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=">
       </script>
 </body>
 
