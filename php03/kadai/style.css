@@ -1,0 +1,314 @@
+body{
+  background-color: rgb(212, 212, 212);
+  background-size: cover;
+}
+.title{
+  position: absolute;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  color: rgb(250, 250, 250);
+}
+#ranking,#register{
+  position: absolute;
+
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border: white 3px solid;
+}
+#ranking{
+  left: 80%;
+  top: 3%;
+}
+#register{
+  left: 90%;
+  top: 3%;
+}
+#ranking>a,#register>a{
+  color: rgb(247, 240, 240);
+}
+.return{
+  position: absolute;
+  left: 85%;
+  top: 3%;
+  color: rgb(247, 240, 240);
+  border:white 3px solid; 
+  padding: 5px 20px;
+}
+
+#ranking:hover,.return:hover,#register:hover{
+  /* background-color: rgb(255, 217, 0);
+   */
+  text-decoration: underline;
+}
+.left{
+  position:absolute;
+  top: 2%;
+  left: 20%;
+}
+.right{
+  position:absolute;
+  top: 2%;
+  left: 65%;
+}
+.wrapper{
+  position: relative;
+}
+.ranking1{
+position: absolute;
+top: 1%;
+left: 5%;
+}
+.ranking2{
+position: absolute;
+top: 1%;
+left: 50%;
+}
+
+#stadiumRanking{
+  border-collapse:  collapse; 
+  position:absolute;
+  width:40%;
+  height:80%;
+  top: 10%;
+  left: 5%;
+  background-color: rgb(0, 149, 218);
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#reviewRanking{
+  border-collapse:  collapse; 
+  position:absolute;
+  width:40%;
+  height:80%;
+  top: 10%;
+  left: 50%;
+  background-color: rgb(218, 167, 0);
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+td, th{
+  border: solid 1px white;
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; 
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#myMap{
+  position:absolute;
+  width:60%;
+  height:80%;
+  top: 10%;
+  left: 5%;
+  border: rgb(230, 231, 231) solid 5px;
+}
+.cheer{
+  cursor: pointer;
+}
+.kuchikomi,.result{
+  display: none;
+  position:absolute;
+  width:25%;
+  height:80%;
+  top: 10%;
+  left: 70%;
+  border: rgb(180, 180, 180) solid 5px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+#stadiumName{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+  color: antiquewhite;
+  background-color: rgb(255, 102, 0);
+  opacity: 0.8;
+}
+.points,#reviews,.titles{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+#averageTitle,#average{
+  font-size: 30px;
+  width: 50%;
+ text-align: center;
+}
+#aReviewer{
+  padding-left: 10px;
+  font-size: 22px;
+  width: 40%;
+  overflow-wrap:break-word;
+  text-align: left;
+  padding-top: 10px;
+  color: rgb(0, 204, 255);
+  text-decoration-line: underline;
+}
+#stars{
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+}
+#delete,#edit{
+  width: 10%;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: right;
+  padding-left: 10px;
+}
+#edit>p>a{
+color: rgb(0, 119, 255);
+}
+#delete>p>a{
+color: rgb(252, 109, 109);
+}
+#edit>p>a:hover{
+color: blue;
+}
+#delete>p>a:hover{
+color: red;
+}
+#aReview{
+  padding-left: 10px;
+  font-size: 18px;
+  width: 70%;
+  overflow-wrap:break-word;
+}
+/* #titleL,#titleC,#titleR{
+  text-align: center;
+  font-size: 23px;
+  color: rgb(250, 81, 59);
+} */
+
+#comment{
+  width: 90%;
+  margin: 20px 5%;
+}
+#btn{
+  height: 30px;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+#return{
+  position: absolute;
+  top: 2%;
+  left: 90%;
+}
+#btn input{
+  height: 30px;
+  width: 200px;
+}
+a {
+  text-decoration: none;
+  }
+#name{
+  font-size: 20px;
+  font-style: italic;
+}
+/* 星評価 */
+.star-rating {
+  margin: 0 5%;
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+.choice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+/* *, */
+/* ::after,
+::before {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+body::before {
+  height: 100%;
+  content: '';
+  width: 0;
+  background: red;
+  vertical-align: middle;
+  display: inline-block;
+} */
